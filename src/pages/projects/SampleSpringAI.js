@@ -10,7 +10,7 @@ function SampleSpringAI() {
       githubUrl="https://github.com/projects-book/sample-spring-ai"
       videoUrl=""
       images={[
-        { src: "/resources/images/sample-spring-ai-snapshot.png", alt: "Custom Shell" },
+        { src: "/resources/images/sample-spring-ai-snapshot.png", alt: "Spring AI" },
       ]}
     />
   );

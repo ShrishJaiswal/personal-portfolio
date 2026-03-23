@@ -1,0 +1,122 @@
+/* ===== Experience Page ===== */
+.experience {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 60px 24px 80px;
+}
+
+/* ===== Timeline ===== */
+.experience-timeline {
+  max-width: 720px;
+  margin: 0 auto;
+  position: relative;
+  padding-left: 32px;
+}
+
+.experience-timeline::before {
+  content: '';
+  position: absolute;
+  left: 7px;
+  top: 8px;
+  bottom: 8px;
+  width: 2px;
+  background: var(--color-border);
+}
+
+/* ===== Card ===== */
+.experience-card {
+  position: relative;
+  margin-bottom: 32px;
+}
+
+.experience-card:last-child {
+  margin-bottom: 0;
+}
+
+.experience-dot {
+  position: absolute;
+  left: -32px;
+  top: 24px;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background: var(--color-primary);
+  border: 3px solid var(--color-bg);
+  box-shadow: 0 0 0 2px var(--color-primary);
+  z-index: 1;
+}
+
+.experience-card:first-child .experience-dot {
+  background: var(--color-primary);
+  box-shadow: 0 0 0 2px var(--color-primary), 0 0 0 6px var(--color-primary-light);
+}
+
+.experience-content {
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  padding: 24px 28px;
+  box-shadow: var(--shadow-sm);
+  transition: all var(--transition);
+}
+
+.experience-content:hover {
+  border-color: var(--color-primary);
+  box-shadow: var(--shadow-md);
+  transform: translateY(-2px);
+}
+
+/* ===== Header ===== */
+.experience-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 16px;
+  margin-bottom: 4px;
+  flex-wrap: wrap;
+}
+
+.experience-role {
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: var(--color-text);
+}
+
+.experience-duration {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--color-primary);
+  background: var(--color-primary-light);
+  padding: 4px 12px;
+  border-radius: 50px;
+  white-space: nowrap;
+}
+
+.experience-company {
+  font-size: 0.95rem;
+  font-weight: 500;
+  color: var(--color-text-secondary);
+  margin-bottom: 12px;
+}
+
+.experience-description {
+  font-size: 0.95rem;
+  color: var(--color-text-secondary);
+  line-height: 1.7;
+}
+
+/* ===== Responsive ===== */
+@media (max-width: 768px) {
+  .experience {
+    padding: 40px 20px 60px;
+  }
+
+  .experience-header {
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .experience-content {
+    padding: 20px;
+  }
+}

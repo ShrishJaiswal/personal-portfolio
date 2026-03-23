@@ -46,6 +46,15 @@ function Navbar() {
           </li>
           <li>
             <Link
+              to="/experience"
+              className={isActive('/experience') ? 'active' : ''}
+              onClick={() => setMenuOpen(false)}
+            >
+              Experience
+            </Link>
+          </li>
+          <li>
+            <Link
               to="/contact"
               className={isActive('/contact') ? 'active' : ''}
               onClick={() => setMenuOpen(false)}

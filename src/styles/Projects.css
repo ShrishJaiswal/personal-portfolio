@@ -1,0 +1,22 @@
+/* ===== Projects Listing Page ===== */
+.projects-listing {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 60px 24px 80px;
+}
+
+.projects-listing .projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: 24px;
+}
+
+@media (max-width: 768px) {
+  .projects-listing {
+    padding: 40px 20px 60px;
+  }
+
+  .projects-listing .projects-grid {
+    grid-template-columns: 1fr;
+  }
+}
